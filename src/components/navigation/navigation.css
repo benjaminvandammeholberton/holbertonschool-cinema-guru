@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .container img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px red solid;
+}
+
+.header .container span {
+  color: red;
+  cursor: pointer;
+}
