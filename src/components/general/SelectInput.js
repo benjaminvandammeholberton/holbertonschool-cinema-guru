@@ -6,7 +6,7 @@ const SelectInput = ({ label, options, className, value, setValue }) => {
   };
   return (
     <div className="select-input">
-      <label>{label}Min Date:</label>
+      <label className={className}>{label}:</label>
       <select className={className} onChange={handleSelect} value={value}>
         {options?.map((option) => {
           return <option value={option}>{option}</option>;

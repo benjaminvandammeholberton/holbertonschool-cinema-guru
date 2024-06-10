@@ -14,6 +14,7 @@ const Register = ({ username, password, setUsername, setPassword }) => {
         type="text"
         value={username}
         setValue={setUsername}
+        className={'light'}
       />
       <Input
         label="Password"
@@ -21,6 +22,7 @@ const Register = ({ username, password, setUsername, setPassword }) => {
         type="password"
         value={password}
         setValue={setPassword}
+        className={'light'}
       />
       <Button label="Sign Up" />
     </div>

@@ -1,12 +1,21 @@
 /* Input */
 
-.input {
-}
-
 .input input {
   border: none;
   border-bottom: 1px red solid;
   outline: none;
+  width: 150px;
+  background-color: #2c2c2c;
+}
+
+.input .dark {
+  color: white;
+  background-color: #2c2c2c;
+}
+
+.input .light {
+  color: black;
+  background-color: white;
 }
 
 .input .label {
@@ -20,7 +29,7 @@
 }
 
 .input .label span {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 /* Button */
@@ -29,7 +38,7 @@ button {
   background-color: red;
   border: none;
   width: 100px;
-  height: 35px;
+  height: 45px;
   color: white;
 }
 button:hover {
@@ -41,17 +50,28 @@ button:hover {
 .select-input {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 150px;
 }
 
 .select-input label {
   text-align: left;
+  font-size: 0.9rem;
 }
 
 .select-input select {
   border: none;
   border-bottom: 1px red solid;
   outline: none;
+}
+
+.select-input .dark {
+  color: white;
+  background-color: #2c2c2c;
+}
+
+.select-input .light {
+  color: black;
+  background-color: white;
 }
 
 /* Search Bar */
@@ -62,7 +82,7 @@ button:hover {
   padding: 5px;
   padding-left: 20px;
   width: 300px;
-  background-color: rgb(103, 103, 103);
+  background-color: #2c2c2c;
   color: white;
   outline: none;
   border: none;

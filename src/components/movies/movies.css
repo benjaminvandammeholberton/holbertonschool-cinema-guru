@@ -1,0 +1,46 @@
+/* tags */
+
+.tag {
+  border: 1px red solid;
+  border-radius: 20px;
+  width: fit-content;
+  height: fit-content;
+  padding: 1px 5px 1px 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.selected {
+  background-color: red;
+}
+
+/* filter */
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+}
+
+.filter .search {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter .inputs {
+  display: flex;
+  gap: 15px;
+}
+
+.filter .tags {
+  display: flex;
+  width: 410px;
+  flex-wrap: wrap;
+  gap: 5px;
+  row-gap: 5px;
+}

@@ -1,3 +1,5 @@
+/* header */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -26,4 +28,91 @@
 .header .container span {
   color: red;
   cursor: pointer;
+}
+
+/* side-bar */
+
+.side-bar {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.side-bar li {
+  list-style-type: none;
+}
+
+.side-bar-small {
+  width: 50px;
+}
+
+.side-bar-expanded {
+  width: 200px;
+}
+
+.side-bar .navigate {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+
+.side-bar .navigate li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 45px;
+  cursor: pointer;
+  color: white;
+}
+
+.side-bar-expanded .navigate li {
+  justify-content: left;
+  padding-left: 20px;
+}
+
+.side-bar .navigate li:hover {
+  background-color: rgb(252, 97, 97);
+}
+
+.side-bar .activity {
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  color: white;
+  background-color: #2c2c2c;
+}
+
+.side-bar .activity h1 {
+  margin: 0;
+  border-bottom: 1px white solid;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.side-bar .activity ul {
+  font-size: 0.75rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.side-bar .activity ul li {
+  width: 95%;
+}
+
+.side-bar .activity ul li p {
+  margin: 0;
+}
+
+.side-bar .activity ul li span {
+  color: red;
 }

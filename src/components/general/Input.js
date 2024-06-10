@@ -15,7 +15,7 @@ const Input = ({
   };
   return (
     <div className="input">
-      <div className="label">
+      <div className={`label ${className}`}>
         {icon && <FontAwesomeIcon icon={icon} className="icon" />}
         <span>{label}:</span>
       </div>
