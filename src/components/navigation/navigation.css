@@ -1,118 +1,171 @@
 /* header */
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: black;
-  color: white;
-  font-size: 0.8rem;
-  font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    height: 40px;
+    box-sizing: border-box;
+    z-index: 1000;
 }
 
 .header .container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .header .container img {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  border: 2px red solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 2px red solid;
 }
 
 .header .container span {
-  color: red;
-  cursor: pointer;
+    color: red;
+    cursor: pointer;
 }
 
 /* side-bar */
 
 .side-bar {
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  height: 100%;
-}
-
-.side-bar li {
-  list-style-type: none;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 100vh;
+    transition: 300ms ease-in-out;
 }
 
 .side-bar-small {
-  width: 50px;
+    min-width: 50px;
+    width: 50px;
 }
 
 .side-bar-expanded {
-  width: 200px;
+    min-width: 200px;
+    width: 200px;
 }
 
 .side-bar .navigate {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: fixed;
+    width: 50px;
+    overflow: hidden;
 }
 
 .side-bar .navigate li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  height: 45px;
-  cursor: pointer;
-  color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    gap: 5px;
+    height: 45px;
+    cursor: pointer;
+    color: white;
+    white-space: nowrap;
 }
 
+.side-bar .nav-title {
+    opacity: 0;
+    animation: fadeIn 200ms forwards;
+    animation-delay: 50ms;
+}
+
+.side-bar .nav-title-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px 0 10px;
+}
+
+.side-bar-expanded .navigate {
+    width: 50px;
+    animation: fadeInWidth 300ms forwards;
+    animation-delay: 50ms;
+}
+
+@keyframes fadeInWidth {
+    to {
+        width: 200px;
+    }
+}
+
+
 .side-bar-expanded .navigate li {
-  justify-content: left;
-  padding-left: 20px;
+    justify-content: left;
+    padding-left: 16px;
 }
 
 .side-bar .navigate li:hover {
-  background-color: rgb(252, 97, 97);
+    background-color: rgb(252, 97, 97);
+}
+
+.side-bar .selected {
+    background-color: rgb(252, 97, 97);
 }
 
 .side-bar .activity {
-  border: 1px black solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5px;
-  color: white;
-  background-color: #2c2c2c;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    color: white;
+    background-color: #2c2c2c;
+    opacity: 0;
+    animation: fadeIn 150ms forwards;
+    animation-delay: 170ms;
+    position: fixed;
+    width: 190px;
+    top: 200px;
 }
 
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
 .side-bar .activity h1 {
-  margin: 0;
-  border-bottom: 1px white solid;
-  font-weight: 500;
-  font-size: 1.5rem;
+    margin: 0;
+    border-bottom: 1px white solid;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .side-bar .activity ul {
-  font-size: 0.75rem;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
+    font-size: 0.75rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
 }
+
 .side-bar .activity ul li {
-  width: 95%;
+    width: 95%;
 }
 
 .side-bar .activity ul li p {
-  margin: 0;
+    margin: 0;
 }
 
 .side-bar .activity ul li span {
-  color: red;
+    color: red;
 }

@@ -1,8 +1,3 @@
-import './App.css';
-import Input from './components/general/Input';
-import SearchBar from './components/general/SearchBar';
-import SelectInput from './components/general/SelectInput';
-import Button from './components/general/Button';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Authentication from './routes/auth/Authentication';
@@ -51,22 +46,3 @@ function App() {
 }
 
 export default App;
-
-// (
-//   <div
-//     className="App"
-//     style={{
-//       height: '100vh',
-//       display: 'flex',
-//       flexDirection: 'column',
-//       gap: '50px',
-//       justifyContent: 'center',
-//       alignItems: 'center',
-//     }}
-//   >
-//     <Input label="test" setValue={() => {}} value="hello" icon={faKey} />
-//     <SearchBar />
-//     <SelectInput />
-//     <Button label="Button" />
-//   </div>
-// );

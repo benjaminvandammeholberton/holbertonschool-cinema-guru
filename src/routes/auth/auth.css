@@ -9,10 +9,12 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  background: white;
 }
 
 .authentication h1 {
   font-size: 1.5rem;
+  color: black;
 }
 
 .authentication .switch-buttons {

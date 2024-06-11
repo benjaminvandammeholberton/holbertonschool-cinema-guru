@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Filter from '../../components/movies/Filter';
 import Header from '../../components/navigation/Header';
 import SideBar from '../../components/navigation/SideBar';
 import './dashboard.css';
@@ -13,14 +12,13 @@ const Dashboard = ({ userUsername, setIsLoggedIn }) => {
       <div className="dashboard">
         <Header userUsername={userUsername} setIsLoggedIn={setIsLoggedIn} />
         <div className="main-container">
-          <SideBar />
-          <Filter />
-          {/* <Routes>
-            <Route path="/home" element={<HomePage />} />
-            <Route path="/favorites" element={<Favorites />} />
-            <Route path="/watchlater" element={<WatchLater />} />
-            <Route path="*" element={<Navigate to="/home" />} />
-          </Routes> */}
+            <SideBar />
+                <Routes>
+                    <Route path="/home" element={<HomePage />} />
+                    <Route path="/favorites" element={<Favorites />} />
+                    <Route path="/watchlater" element={<WatchLater />} />
+                    <Route path="*" element={<Navigate to="/home" />} />
+                </Routes>
         </div>
       </div>
     </BrowserRouter>
